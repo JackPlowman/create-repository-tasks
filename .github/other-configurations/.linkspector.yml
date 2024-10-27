@@ -1,0 +1,5 @@
+dirs:
+  - ./
+  - ./docs
+aliveStatusCodes:
+  - 200
