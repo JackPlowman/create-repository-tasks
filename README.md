@@ -9,6 +9,7 @@ A set of tasks to set up a new repository.
   - [Tasks](#tasks)
     - [General](#general)
     - [Language Specific](#language-specific)
+    - [CI/CD](#cicd)
 
 ## Tasks
 
@@ -23,6 +24,7 @@ A set of tasks to set up a new repository.
 - Set up a `SECURITY.md` file to the root of the repository.
 - Set up issue templates for the repository.
 - Set up generic Git Hooks for the repository.
+- Set up task runners for the repository. Such as `just` and `make`.
 
 ### Language Specific
 
@@ -31,3 +33,20 @@ A set of tasks to set up a new repository.
 - Configure unit tests for the language
   - Set up configuration in the `.vscode/settings.json` file.
 - Set up Git Hooks for the language for linting and formatting.
+
+### CI/CD
+
+- Set up Code Quality Checks for the repository.
+  - Set up SuperLinter for the repository.
+  - Set up Language Specific formatting and linting CI/CD for the repository.
+  - Set up Markdown link checker for the repository.
+  - Set up task runner formatting for the repository. Such as `just` and `make`.
+- Check pull request title if necessary.
+- Sync labels for the repository.
+- Apply labels to pull requests.
+- Set up Dependency Updates for the repository using Dependabot.
+- Set up CodeQL analysis for the repository.
+- Set up dependency review for the repository.
+- Set up unit testing in a CI/CD pipeline for the repository.
+- Set up SonarCloud analysis for the repository.
+- Set up integration testing in a CI/CD pipeline for the repository.
