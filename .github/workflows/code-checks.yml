@@ -1,10 +1,10 @@
-name: "Code Quality"
+name: "Code Checks"
 
 on:
   push:
     branches: [main]
   pull_request:
-    types: [opened, synchronize, reopened, ready_for_review]
+    types: [opened, synchronize]
 
 permissions:
   contents: read
@@ -48,3 +48,13 @@ jobs:
           reporter: github-pr-review
           fail_on_error: true
           filter_mode: nofilter
+
+  dependency-review:
+    name: Dependency Review
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4.2.2
+
+      - name: Dependency Review
+        uses: actions/dependency-review-action@v4.4.0
