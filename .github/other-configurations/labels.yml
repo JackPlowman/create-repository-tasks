@@ -39,9 +39,6 @@
 - color: 1900ff
   name: markdown
   description: Pull requests that update Markdown documentation
-- color: 1900ff
-  name: markdown
-  description: Pull requests that update Markdown documentation
 # Components
 - color: ff0073
   name: git_hooks
