@@ -1,6 +1,5 @@
 version: 2
 updates:
-  # Maintain dependencies for GitHub Actions
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
@@ -10,6 +9,9 @@ updates:
       timezone: "Europe/London"
     target-branch: "main"
     groups:
-      github-action-dependencies:
+      github-actions:
         patterns:
           - "*"
+        update-types:
+          - "patch"
+          - "minor"
