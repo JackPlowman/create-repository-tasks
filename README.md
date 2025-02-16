@@ -22,6 +22,7 @@ A set of tasks to set up a new repository.
 - Set up a `CODE_OF_CONDUCT.md` file to the root of the repository.
 - Set up a `CONTRIBUTING.md` file to the root of the repository.
 - Set up a `SECURITY.md` file to the root of the repository.
+  - Ensure that the `SECURITY.md` file links to the security tab of the repository.
 - Set up issue templates for the repository.
 - Set up generic Git Hooks for the repository.
 - Set up task runners for the repository. Such as `just` and `make`.
