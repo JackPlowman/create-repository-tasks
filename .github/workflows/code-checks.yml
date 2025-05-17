@@ -39,7 +39,7 @@ jobs:
       contents: read
       pull-requests: read
       security-events: write
-    uses: JackPlowman/reusable-workflows/.github/workflows/common-code-checks.yml@14445779094fde883fdb9f65946fcae6c25f46c0 # v2025.05.14.01
+    uses: JackPlowman/reusable-workflows/.github/workflows/common-code-checks.yml@0ba3f6b8907da080154872a6ed9e103a1cb46852 # v2025.05.17.02
     secrets:
       workflow_github_token: ${{ secrets.GITHUB_TOKEN }}
 
@@ -55,9 +55,9 @@ jobs:
           fetch-depth: 0
           persist-credentials: false
       - name: Initialize CodeQL
-        uses: github/codeql-action/init@45775bd8235c68ba998cffa5171334d58593da47 # v3.28.15
+        uses: github/codeql-action/init@ff0a06e83cb2de871e5a09832bc6a81e7276941f # v3.28.18
         with:
           languages: actions
           queries: security-and-quality
       - name: Perform CodeQL Analysis
-        uses: github/codeql-action/analyze@45775bd8235c68ba998cffa5171334d58593da47 # v3.28.15
+        uses: github/codeql-action/analyze@ff0a06e83cb2de871e5a09832bc6a81e7276941f # v3.28.18
