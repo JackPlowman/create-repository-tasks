@@ -39,7 +39,7 @@ jobs:
       contents: read
       pull-requests: read
       security-events: write
-    uses: JackPlowman/reusable-workflows/.github/workflows/common-code-checks.yml@14445779094fde883fdb9f65946fcae6c25f46c0 # v2025.05.14.01
+    uses: JackPlowman/reusable-workflows/.github/workflows/common-code-checks.yml@75ceb782a5815a98162de1321c852df74830a493 # v2025.05.24.01
     secrets:
       workflow_github_token: ${{ secrets.GITHUB_TOKEN }}
 
