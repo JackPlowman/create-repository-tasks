@@ -44,7 +44,7 @@ lefthook-validate:
 
 # Run zizmor checking
 zizmor-check:
-    uvx zizmor . --persona=pedantic
+    uvx zizmor . --persona=auditor
 
 # ------------------------------------------------------------------------------
 # Pinact
