@@ -53,4 +53,3 @@ A set of tasks to set up a new repository.
 - Set up SonarCloud analysis for the repository.
 - Set up integration testing in a CI/CD pipeline for the repository.
 - Add zizmor GitHub Workflow/Action analysis.
-- Set up CodeLimit analysis for the repository.
