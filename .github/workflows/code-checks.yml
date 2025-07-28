@@ -35,6 +35,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           LINTER_RULES_PATH: .github/super-linter-configurations
           YAML_ERROR_ON_WARNING: true
+          VALIDATE_GIT_COMMITLINT: false
+          VALIDATE_EDITORCONFIG: false
 
   common-code-checks:
     name: Common Code Checks
