@@ -17,7 +17,7 @@ A set of tasks to set up a new repository.
 
 - Add a `pull_request_template.md` to the `.github` directory.
 - Add a `.editorconfig` file to the root of the repository.
-- Add a `LICENSE` file to the root of the repository. If one wasn't created with the repository.
+- Add a `LICENCE` file to the root of the repository. If one wasn't created with the repository.
 - Add a `README.md` file to the root of the repository.
   - Add project status badges to the `README.md` file.
 - Set up a `CODE_OF_CONDUCT.md` file to the root of the repository.
