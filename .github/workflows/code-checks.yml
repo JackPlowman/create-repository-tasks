@@ -23,9 +23,9 @@ jobs:
     name: Common Code Checks
     permissions:
       contents: read
-      actions: read
-      pull-requests: write
-      security-events: write
+      actions: read # Allow the workflow to read actions metadata
+      pull-requests: write # Allow the workflow to create and modify pull request comments
+      security-events: write # Allow the workflow to upload analysis results
     uses: JackPlowman/reusable-workflows/.github/workflows/common-code-checks.yml@3108e71d84bdf3f50512f378742e2602f1d74628 # v2025.12.19.03
     secrets:
       workflow_github_token: ${{ secrets.GITHUB_TOKEN }}
@@ -34,7 +34,7 @@ jobs:
     name: CodeQL Analysis
     permissions:
       contents: read
-      security-events: write
+      security-events: write # Allow the workflow to upload analysis results
     strategy:
       matrix:
         language: [actions]
