@@ -15,6 +15,6 @@ jobs:
     name: Common Pull Request Tasks
     permissions:
       pull-requests: write # For writing labels and comments on PRs
-    uses: JackPlowman/reusable-workflows/.github/workflows/common-pull-request-tasks.yml@3108e71d84bdf3f50512f378742e2602f1d74628 # v2025.12.19.03
+    uses: JackPlowman/reusable-workflows/.github/workflows/common-pull-request-tasks.yml@a42eb6595bfdc6571cca521a3aeca78b77be0cb5 # v2025.12.27.01
     secrets:
       workflow_github_token: ${{ secrets.GITHUB_TOKEN }}
